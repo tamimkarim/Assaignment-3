@@ -1,20 +1,17 @@
-var business = 700;
-var minister = 650;
-var sochib = 750;
+function brickCalculator(floor){
+    var total = 0;
+    var firstTenthFloor = 15* 1000;
+    var moreThanTen =12*1000;
+    tot(alBrick = firstTenthFloor + moreThanTen;
+    for(var i=0; i<floor; i++){
+        if(floor == 10){
 
-var max =Math.max(business, minister, sochib );
-console.log(max);
+            console.log
+        }
+    }
 
-//  if( business > minister){
-//      if(business > sochib){
-//         console.log("Business is bigger");
-//      }
-//      else{
-//         console.log("Sochib is bigger");
-//      }
+    return ;
+}
 
-
-//  }
-//  else{
-//      console.log("Minister is bigger");
-//  }
+var result = brickCalculator(30);
+console.log(result);

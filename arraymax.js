@@ -1,22 +1,17 @@
-// var marks =[45, 65, 56, 32, 75, 34, 63, 71];
-// var max = marks[0];
-// for( var i =0; i< marks.length; i++){
-//     var element =marks[i];
-//     if (element> max){
-//         max = element;
-//     }
-
-// }
-// console.log("Highest value is : ", max);
-
-
-var marks = [20, 45, 67, 89, 43, 09, 40, 76];
-var max = marks[0];
-for ( var i =0; i< marks.length; i++){
-    var element = marks[i];
-    if(element >max){
-        max = element;
+function findShort(s){
+    let wordsArr = s.split(' ');
+  
+    let shortest = Infinity;
+  //   let shortest = wordsArr[0].length;
+  
+    for (let i = 0; i < wordsArr.length; i++){
+      let wordLength = wordsArr[i].length;
+      if (wordLength < shortest){
+        shortest = wordLength;
+      }
     }
-
-}
-console.log("Highest value is : ", max);
+  
+    return shortest;
+  }
+  let result = tinyFriend(['Tamim', 'Karim', 'Fahmida', 'Sada', 'Shahat', 'Mim']);
+  console.log(result);
