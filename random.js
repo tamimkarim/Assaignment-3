@@ -1,16 +1,23 @@
-function brickCalculator(firstTenthFloor, elevenToTwenty, aboveTwenty){
-    
-    var totalForTenth = firstTenthFloor * 15000;
-    //Since the instructor said we will need 15000 bricks on first tenth floor.
+function animalCal(distance){
+var animal =0;
+if (distance <= 10){
+    animal = distance *50; 
 
-    var totalForTwenty = elevenToTwenty * 12000;
-    //Since the instructor said we will need 12000 bricks on eleven to twenty floor.
-
-    var totalForAbove = aboveTwenty * 10000;
-    //Since the instructor said we will need 10000 bricks above twenty floors.
-
-    var totalBrick = totalForTenth + totalForTwenty + totalForAbove;
-    return totalBrick;
 }
-var result = brickCalculator (10, 10, 2);
-console.log("Total ammount of bricks we need to make this building is ",result);
+else if(distance <=20){
+    var firstPart = 10*50;
+    var remaining = distance - 10; 
+    var secoundPart = remaining * 100;
+    animal = firstPart + secoundPart;
+}
+else{
+    var firstPart = 10*50;
+    var secoundPart = 10*100;
+    var  remaining = distance -20;
+    var thirdPart = remaining *300;
+    animal = firstPart + secoundPart + thirdPart;
+}
+return animal;
+}
+var count = animalCal(32);
+console.log(count);

@@ -1,17 +1,24 @@
-function brickCalculator(floor){
-    var total = 0;
-    var firstTenthFloor = 15* 1000;
-    var moreThanTen =12*1000;
-    tot(alBrick = firstTenthFloor + moreThanTen;
-    for(var i=0; i<floor; i++){
-        if(floor == 10){
+function factorial(num){
+    var fact = 1;
+    for( var i = 1; i <= num; i++){
 
-            console.log
-        }
+        fact = fact * i;
+        console.log(i, fact);
+
+    }
+    return factorial
+}
+function factorialRecursive(num){
+    if(num == 1){
+        console.log(num);
+        return 1;
+    }
+    else{
+        console.log(num, num-1);
+        return num * factorialRecursive (num -1);
     }
 
-    return ;
-}
 
-var result = brickCalculator(30);
+}
+var result = factorial(5);
 console.log(result);
